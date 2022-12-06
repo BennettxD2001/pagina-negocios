@@ -1,0 +1,27 @@
+{"usuarios":[
+    {
+        "id": "1",
+        "nombre": "Bennett",
+        "apellidos": "Mtz Teran",
+        "email": "bennett@gmail.com",
+        "contraseña": "12345678",
+        "fechaNacimiento": "07/09/2001"
+    },
+    {
+        "id": 2,
+        "nombre": "Andrea",
+        "apellidos": "Leon Aceves",
+        "email": "andrea@gmail.com",
+        "contraseña": "12345678",
+        "fechaNacimiento": "10/11/2001"
+    },
+    {
+        "id": 3,
+        "nombre": "Erik",
+        "apellidos": "Esquivel Mares",
+        "email": "erik@hotmail.com",
+        "contraseña": "12345678",
+        "fechaNacimiento": "09/06/2000"
+    }
+]
+}
