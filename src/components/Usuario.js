@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Container, Table, Button, Row, Col, Modal } from 'react-bootstrap';
-import Form from 'react-bootstrap/Form';
 import UserEdit from './UserEdit'
 
 export default function Usuario() {
