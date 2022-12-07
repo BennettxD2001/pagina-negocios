@@ -49,14 +49,14 @@ const Login = () => {
                         <br></br>
                         <br></br>
                         <br></br>
-                        <Form.Label><h4>Inicia sesión con tu correo y contraseña</h4></Form.Label>
+                        <Form.Label><h4>Inicia sesión con tu cuenta</h4></Form.Label>
                         <Form.Group className="mb-3" controlId="email">
-                            <Form.Label style={{ fontSize: '21px' }}>Correo</Form.Label>
+                            <Form.Label style={{ fontSize: '21px' }}>Email</Form.Label>
                             <Form.Control
                                 required
                                 type="email"
                                 minLength={5}
-                                placeholder="Ej. Electricar@gmail.com"
+                                placeholder="nombre-de-usuario@gmail.com"
                                 autoFocus
                                 name="email"
                                 value={Login.email}
@@ -81,7 +81,7 @@ const Login = () => {
                         <Button className='buttonSeeProducts' type='submit'> Iniciar sesión </Button>
                         <br></br>
                         <br></br>
-                        <Button className='buttonSeeProducts' onClick={clickRegister}> No tengo una cuenta </Button>
+                        <Button className='buttonSeeProducts' onClick={clickRegister}> ¿Aun no tienes cuenta? </Button>
                     </Form>
                 </Col>
 
