@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button, CloseButton } from 'react-bootstrap';
-import "../css-components/cookies-style.css";
-import "../css-components/buttons-style.css";
+import "../css-components/stylecook.css";
+import "../css-components/style1.css";
 
 const Cookies = () => {
     const [showAlert, setShowAlert] = useState(true);

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col,Modal } from 'react-bootstrap';
 
 //style
-import "../css-components/contact-style.css";
+import "../css-components/style2.css";
 
 const Contact = () => {
     const [Contacto, setContacto] = useState({

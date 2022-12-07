@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
-import "../css-components/home-product.css";
+import "../css-components/style3.css";
 import { useNavigate } from 'react-router-dom';
 
 //json file

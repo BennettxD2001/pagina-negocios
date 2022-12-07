@@ -29,20 +29,6 @@ const Register = () => {
     return (
         <Container>
             <Row style={{ justifyContent: 'center' }}>
-            <Col> 
-                <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <img alt='InicioSesion' title='InicioSesion' src="/react-example/Images/Register.gif" width="100%" height="50%"></img>
-                </Col>
 
                 <Col md="5">
 
@@ -51,8 +37,7 @@ const Register = () => {
                         <br></br>
                         <br></br>
                         <br></br>
-                        <br></br>
-                        <br></br>
+
                         <Form.Label><h4>Crear una cuenta</h4></Form.Label>
                         <Form.Group className="mb-3" controlId="name">
                             <Form.Label style={{ fontSize: '21px' }}> Nombre</Form.Label>
@@ -86,7 +71,7 @@ const Register = () => {
                                 required
                                 type="email"
                                 minLength={5}
-                                placeholder="Ej. Electricar@gmail.com"
+                                placeholder="nombre-de-usuario@gmail.com"
                                 autoFocus
                                 name="email"
                                 value={Register.email}
@@ -108,38 +93,24 @@ const Register = () => {
                             />
                         </Form.Group>
                         <br></br>
-                        <Form.Group className="mb-3" controlId="date_birth">
-                            <Form.Label style={{ fontSize: '21px' }}>Fecha de nacimineto</Form.Label>
-                            <Form.Control
-                                required
-                                type="date"
-                                minLength={8}
-                                placeholder="DD-MM-AAAA"
-                                name="date_birth"
-                                value={Register.date_birth}
-                                onChange={onChangeRegister}
-                            />
-                        </Form.Group>
-                        <br></br>
                         <Form.Group className="mb-3" controlId="address">
                             <Form.Label style={{ fontSize: '21px' }}>Dirección</Form.Label>
                             <Form.Control
                                 required
                                 type="text"
                                 minLength={7}
-                                placeholder="Ej. Fray Luis de león #502 Santa Anita"
+                                placeholder="Ingresa tu domicilio"
                                 name="address"
                                 value={Register.address}
                                 onChange={onChangeRegister}
                             />
                         </Form.Group>
                         <br></br>
-                        <Button className='buttonSeeProducts' type='submit'> Registrar </Button>
+                        <Button style={{ justifyContent: 'flex-end' }} className='buttonSeeProducts' type='submit'> Registrarse </Button>
                         <br></br>
                         <br></br>
                     </Form>
                 </Col>
-                
             </Row>
 
         </Container>

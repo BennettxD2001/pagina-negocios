@@ -1,6 +1,6 @@
 import React from 'react';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { Container } from 'react-bootstrap'; import "../css-components/home-product.css";
+import { Container } from 'react-bootstrap'; import "../css-components/style3.css";
 
 export default function Paypal(props) {
   return (

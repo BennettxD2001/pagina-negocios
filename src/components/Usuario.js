@@ -12,11 +12,11 @@ export default function Usuario() {
     const [users, setUser] = useState([
         {
             id: 1,
-            nombre: "Juan Carlos",
-            apellidos: "Sánchez Gaytán",
-            email: "negocios1@hotmail.com",
-            contraseña: "6hr6w26frwqnmg",
-            fechaNacimiento: "02/02/2002"
+            nombre: "Bennett",
+            apellidos: "Mtz",
+            email: "bennett@ita.com",
+            contraseña: "12345678",
+            fechaNacimiento: "07/09/2001"
         },
         {
             id: 2,
@@ -28,11 +28,11 @@ export default function Usuario() {
         },
         {
             id: 3,
-            nombre: "Saúl",
-            apellidos: "Mascorro Luévano",
-            email: "smascorro2001@gmail.com",
-            contraseña: "1dsa483dt4",
-            fechaNacimiento: "23/09/2001"
+            nombre: "Jennifer",
+            apellidos: "Rodriguez",
+            email: "jenny@ita.com",
+            contraseña: "12345678",
+            fechaNacimiento: "25/08/2001"
         }
     ]);
 
@@ -57,12 +57,12 @@ export default function Usuario() {
                 <caption align="center">Usuarios</caption>
                 <Table responsive="md" striped bordered hover variant="ligth"
                     style={{
-                        background: "#a5edff",
-                        borderColor: "gray"
+                        background: "#c0c0c0",
+                        borderColor: "white"
                     }}>
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>ID</th>
                             <th>Nombre</th>
                             <th>Apellidos</th>
                             <th>Correo electrónico</th>
