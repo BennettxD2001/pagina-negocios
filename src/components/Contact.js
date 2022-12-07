@@ -26,36 +26,67 @@ const Contact = () => {
     return (
         <Container>
             <Row style={{ justifyContent: 'left' }} >
-                <Col >
-                    <br></br>
-                    <img
-                        width="100%"
-                        height="100%"
-                        alt='GMAIL'
-                        title='GMAIL'
-                        src="/react-example/Images/Contact_image.gif">
-                    </img>
-                </Col>
-
                 <Col md={5}>
                     <br></br>
                     <br></br>
                     <br></br>
+                    <h1>AUTOS BENNETT</h1>
                     <br></br>
-                    <h1>Contáctanos</h1>
-                    <h5>Estimado usuario, dejamos a tu disposición este canal de comunicación, para que puedas comunicarte con nosotros.
-                        <br />Estamos a tu servicio 24/7.</h5>
+                    
+                    <h2>CONTACTA A UN ASESOR</h2>
                     <Form onSubmit={sendMessage} style={{ textAlign: "left" }}>
                         <br></br>
-                        <Form.Label><h4>Escríbenos...</h4></Form.Label>
+                        <Form.Label><h4>Datos Personales</h4></Form.Label>
                         <br></br>
                         <Form.Group className="mb-3">
                             <Form.Label><b>Para:</b></Form.Label>
-                            <Form.Control placeholder="electricar19151653@gmail.com" disabled />
+                            <Form.Control placeholder="AutosBennett@gmail.com" disabled />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="mensaje">
-                            <Form.Label><b>Mensaje:</b></Form.Label>
+                            <Form.Label><b>Nombre</b></Form.Label>
+                            <textarea
+                                required
+                                name="Nombre"
+                                value={Contacto.mensaje}
+                                onChange={onChange}
+                                type="text"
+                                maxLength="250"
+                                minLength={15}
+                                class="text-area-border" rows="1" cols="60"
+                                placeholder="">
+                            </textarea>
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="mensaje">
+                            <Form.Label><b>Email</b></Form.Label>
+                            <textarea
+                                required
+                                name="email"
+                                value={Contacto.mensaje}
+                                onChange={onChange}
+                                type="text"
+                                maxLength="250"
+                                minLength={15}
+                                class="text-area-border" rows="1" cols="60"
+                                placeholder="">
+                            </textarea>
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="mensaje">
+                            <Form.Label><b>Teléfono</b></Form.Label>
+                            <textarea
+                                required
+                                name="telefono"
+                                value={Contacto.mensaje}
+                                onChange={onChange}
+                                type="text"
+                                maxLength="250"
+                                minLength={15}
+                                class="text-area-border" rows="1" cols="60"
+                                placeholder="">
+                            </textarea>
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="mensaje">
+                            <Form.Label><b>Mensaje</b></Form.Label>
                             <textarea
                                 required
                                 name="mensaje"
@@ -65,13 +96,23 @@ const Contact = () => {
                                 maxLength="250"
                                 minLength={15}
                                 class="text-area-border" rows="5" cols="60"
-                                placeholder="Escribe aquí...">
+                                placeholder="">
                             </textarea>
                         </Form.Group>
-                        <Button className='buttonSeeProducts' type='submit'><h6>Enviar mensaje</h6>  </Button>
+                        <Button className='buttonSeeProducts' type='submit'><h6>Enviar</h6></Button>
                         <br></br>
                     </Form>
                 </Col>
+                <Col>
+                        <br></br>
+                        <img
+                        width="50%"
+                        height="50%"
+                        alt='GMAIL'
+                        title='GMAIL'
+                        src="/react-example/Images/facebook.png">
+                        </img>
+                        </Col>
             </Row>
 
             <Modal show={showAlert} onHide={alertClose}>
