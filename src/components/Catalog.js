@@ -82,7 +82,7 @@ const Catalog = () => {
             <Row>
                 <Row style={{ textAlign: "right" }}  >
                     <Col>
-                        <DropdownButton style={{ maxWidth: 200 + "px" }} id="dropdown-item-button" title="Ordenar" variant="outline-primary">
+                        <DropdownButton style={{ maxWidth: 200 + "px" }} id="dropdown-item-button" title="Filtrar" variant="outline-primary">
                             <Dropdown.Item as="button" onClick={selectTodos}>Todos</Dropdown.Item>
                             <Dropdown.Item as="button" onClick={selectAutomoviles}>Automóvil</Dropdown.Item>
                             <Dropdown.Item as="button" onClick={selectCamionetas}>Camioneta</Dropdown.Item>
@@ -132,7 +132,7 @@ const Catalog = () => {
                                         <br />
                                         <Button className='buttonSeeProducts' 
                                         onClick={()=>{
-                                            //console.log(auto.id);
+                                            //Escuchando el id
                                             navigate('/react-example/ProductCard',{state:{autoID:auto.id}});
                                         }}>Ver detalles</Button>
                                     </div>
@@ -143,7 +143,7 @@ const Catalog = () => {
                         :
                         <h2>
                             <br></br>
-                            No fue encontrada ninguna coincidencia.</h2>
+                            Porfavor escribir correctamente el nombre del producto.</h2>
                 }
             </div>
             <br></br>
