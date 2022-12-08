@@ -31,6 +31,7 @@ const ProductCard = () => {
 
 
     return (
+
         <Container>
             <br /> <br /> <br /> <br />
             <br /> <br /> <br />
@@ -38,9 +39,9 @@ const ProductCard = () => {
             <h1 class="text-center">Producto</h1>
             <Row style={{ textAlign: "left" }}>
             <div style={{ textAlign: "center" }}>
-                <Button className='buttonSeeProducts' onClick={toastShowC}>Añadir al carrito</Button>
-
-                <img alt="Favoritos" title="Añadir a la lista de deseos" src="/react-example/Images/Fav.png" width={45} style={{ paddingLeft: "15px" }} onClick={toastShowF}></img>
+                <center><Button className='buttonSeeProducts' onClick={toastShowC}>Añadir al carrito</Button></center>
+                <br></br>
+                <img alt="Favoritos" title="Favoritos" src="/react-example/Images/Fav.png" width={45} style={{ paddingLeft: "15px" }} onClick={toastShowF}></img>
             </div>
             <br />
             <br />
@@ -86,16 +87,20 @@ const ProductCard = () => {
                             <td>Andrea Leon</td>
                             <td>Me gustó mucho la atencion de los trabajadores, todos muy atentos, tenian los autos muy limpios si regresaria por otro automovil.
                             </td>
+                            <img src="/react-example/Images/estrella 1.jpg" width="150" height="50"></img>
                         </tr>
                     </tbody>
                 </Table>
 
                 <Button className='buttonSeeProducts' onClick={modalShow} >Agregar reseña</Button>
+                
             </div>
 
             <br />
             <br />
+            
             <ToastContainer className="p-3" position={position}>
+            
                 <Toast show={showToastC} onClose={toastCloseC}>
                     <Toast.Header>
                         <strong className="me-auto">Añadir al carrito</strong>
@@ -111,7 +116,9 @@ const ProductCard = () => {
                     </Toast.Header>
                     <Toast.Body>Se añadió a tu lista de deseos.</Toast.Body>
                 </Toast>
+                
             </ToastContainer>
+            
 
             <Modal show={show} onHide={modalClose}>
                 <Modal.Header closeButton>
