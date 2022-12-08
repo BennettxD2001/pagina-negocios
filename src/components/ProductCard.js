@@ -40,7 +40,7 @@ const ProductCard = () => {
             <div style={{ textAlign: "center" }}>
                 <Button className='buttonSeeProducts' onClick={toastShowC}>Añadir al carrito</Button>
 
-                <img alt="Favoritos" title="Favoritos" src="/react-example/Images/Fav.png" width={45} style={{ paddingLeft: "15px" }} onClick={toastShowF}></img>
+                <img alt="Favoritos" title="Añadir a la lista de deseos" src="/react-example/Images/Fav.png" width={45} style={{ paddingLeft: "15px" }} onClick={toastShowF}></img>
             </div>
             <br />
             <br />
@@ -84,7 +84,7 @@ const ProductCard = () => {
                     <tbody>
                         <tr>
                             <td>Andrea Leon</td>
-                            <td>Me gusto mucho la atencion de los trabajadores, todos muy atentos, tenian los autos muy limpios si regresaria por otro automovil.
+                            <td>Me gustó mucho la atencion de los trabajadores, todos muy atentos, tenian los autos muy limpios si regresaria por otro automovil.
                             </td>
                         </tr>
                     </tbody>
