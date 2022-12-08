@@ -11,8 +11,6 @@ const HomeProducts = () => {
     return (
         <Container fluid>
             <br/>
-            <h1 class="text-center">AUTOS BENNETT</h1>
-            <img src="/react-example/Images/logito.jpeg" width="50%" height="100%"></img>
             <h1 class="text-center">PRODUCTOS DESTACADOS</h1>
             <br></br>
             <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -36,7 +34,7 @@ const HomeProducts = () => {
                                         onClick={()=>{
                                             //console.log(auto.id);
                                             navigate('/react-example/ProductCard',{state:{autoID:auto.id}});
-                                        }}>Ver producto</Button>
+                                        }}>Ver detalles</Button>
                                     </div>
                                 </div>
                             </div>

@@ -30,15 +30,27 @@ function GridComplexExample() {
       <br></br>
       <br></br>
       <br></br>
-      <img alt='Edit' title='Foto de perfil' style={{ justifyContent: 'left' }} src="/react-example/Images/user2.JPG" width="100" height="100" ></img>
       <br></br>
       <br></br>
-
+    
       <Col className="mb-3 mx-5" >
+      <Col>
+                  <img
+                        width="100"
+                        height="100"
+                        alt='GMAIL'
+                        title='GMAIL'
+                        src="/react-example/Images/Perfil.JPG">
+                  </img>
+      </Col>
+      <center>
+        <h2>Mi perfil</h2>
+        <br></br>
       <Form.Group as={Col} className="col-md-4" controlId="formGridName">
         <Form.Label>Nombre</Form.Label>
         <Form.Control placeholder={editUsuario.nombre}  disabled={disable}/>
       </Form.Group>
+
   
       
         <Form.Group as={Col} className="col-md-4" controlId="formGridLastname1">
@@ -62,7 +74,9 @@ function GridComplexExample() {
         <Form.Label>Dirección</Form.Label>
         <Form.Control placeholder={editUsuario.direccion} disabled={disable} />
         </Form.Group>
+        </center>
       </Col>
+    
     </Form>
 
 

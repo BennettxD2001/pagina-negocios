@@ -7,14 +7,15 @@ const Cookies = () => {
     const [showAlert, setShowAlert] = useState(true);
     const alertClose = () => setShowAlert(false);
     return (
+    
         <Modal show={showAlert} onHide={alertClose} >
             <Modal.Header style={{ background: "#303333", color: "#FFFFFF" }}>
-                <Modal.Title>Cookies de Electricar </Modal.Title>
+                <Modal.Title>Cookies de Autos Bennett</Modal.Title>
                 <CloseButton variant='white' onClick={alertClose}  ></CloseButton>
             </Modal.Header>
             <Modal.Body style={{ background: "#303333", color: "#FFFFFF" }} >
-                <h6>Usamos cookies propias y de terceros que entre otras cosas recogen datos sobre sus hábitos de navegación para
-                    mostrarle publicidad personalizada y realizar análisis de uso de nuestro sitio.
+                <h6>Utilizamos cookies permanentes que se almacenan en el dispositivo del usuario y que permiten recuperar la información de la navegación en la siguiente visita. Tienen fecha de caducidad. Estas cookies nos permiten personalizar sus visitas, a través de sus preferencias (por ejemplo, país e idioma). 
+                    También utilizamos cookies de terceros que permiten gestionar y mejorar los servicios ofrecidos. Como por ejemplo, los servicios estadísticos de Google Analytics.
                     <br />
                     Si continúa navegando consideramos que acepta su uso.</h6>
             </Modal.Body>
@@ -27,6 +28,7 @@ const Cookies = () => {
                 </Button>
             </Modal.Footer>
         </Modal>
+       
     );
 
 }
