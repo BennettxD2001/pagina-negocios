@@ -20,11 +20,11 @@ export default function Usuario() {
         },
         {
             id: 2,
-            nombre: "Luis Fernando",
-            apellidos: "Gutiérrez Hernández",
-            email: "luisGH2001@gmail.com",
+            nombre: "Erik Fernando",
+            apellidos: "Esquivel Mares",
+            email: "erikfernando1603@gmail.com",
             contraseña: "789dshj9h5g",
-            fechaNacimiento: "01/01/2001"
+            fechaNacimiento: "16/03/2000"
         },
         {
             id: 3,
@@ -34,6 +34,7 @@ export default function Usuario() {
             contraseña: "1dsa483dt4",
             fechaNacimiento: "23/09/2001"
         }
+        
     ]);
 
     function deleteTest(id) {
