@@ -18,6 +18,7 @@ export default function Usuario() {
             contraseña: "12345678",
             fechaNacimiento: "07/09/2001"
         }
+        
     ]);
 
     function deleteTest(id) {

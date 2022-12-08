@@ -15,13 +15,13 @@ const Catalog = () => {
 
     const [autosTodos, setAutosTodos] = useState(Autos.autos);
 
-    const [camionetas, setCamionetas] = useState([Autos.autos[6], Autos.autos[7], Autos.autos[9]]);
+    const [camionetas, setCamionetas] = useState([ Autos.autos[6]]);
 
-    const [automoviles, setAutomoviles] = useState([Autos.autos[0], Autos.autos[1], Autos.autos[2], Autos.autos[3], Autos.autos[4], Autos.autos[5], Autos.autos[8]]);
+    const [automoviles, setAutomoviles] = useState([Autos.autos[0], Autos.autos[1], Autos.autos[2], Autos.autos[3], Autos.autos[4], Autos.autos[5], Autos.autos[7], Autos.autos[8], Autos.autos[9]]);
 
-    const [menorMayorCar, setMenorMayorCar] = useState([Autos.autos[8], Autos.autos[1], Autos.autos[2], Autos.autos[4], Autos.autos[7], Autos.autos[0], Autos.autos[3], Autos.autos[5], Autos.autos[9], Autos.autos[6]],);
+    const [menorMayorCar, setMenorMayorCar] = useState([Autos.autos[4], Autos.autos[8], Autos.autos[3], Autos.autos[7], Autos.autos[9], Autos.autos[0], Autos.autos[5], Autos.autos[2], Autos.autos[1], Autos.autos[6]],);
 
-    const [mayorMenorCar, setMayorMenorCar] = useState([Autos.autos[6], Autos.autos[9], Autos.autos[5], Autos.autos[3], Autos.autos[0], Autos.autos[7], Autos.autos[4], Autos.autos[2], Autos.autos[1], Autos.autos[8]],);
+    const [mayorMenorCar, setMayorMenorCar] = useState([Autos.autos[6], Autos.autos[1], Autos.autos[2], Autos.autos[5], Autos.autos[0], Autos.autos[9], Autos.autos[7], Autos.autos[3], Autos.autos[0], Autos.autos[4]],);
 
     const selectMenorMayor = () => {
         buscarPalabra.palabra="";
@@ -77,18 +77,18 @@ const Catalog = () => {
             <br></br>
             <br></br>
             <h1>AUTOS BENNETT</h1>
-            <h1 class="text-center">Catálogo</h1>
+            <h1 class="text-center">Catálogo de productos</h1>
             <br></br>
 
             <Row>
                 <Row style={{ textAlign: "right" }}  >
                     <Col>
-                        <DropdownButton style={{ maxWidth: 200 + "px" }} id="dropdown-item-button" title="Ordenar" variant="outline-primary">
+                        <DropdownButton style={{ maxWidth: 200 + "px" }} id="dropdown-item-button" title="filtrar" variant="outline-primary">
                             <Dropdown.Item as="button" onClick={selectTodos}>Todos</Dropdown.Item>
                             <Dropdown.Item as="button" onClick={selectAutomoviles}>Automóvil</Dropdown.Item>
                             <Dropdown.Item as="button" onClick={selectCamionetas}>Camioneta</Dropdown.Item>
-                            <Dropdown.Item as="button" onClick={selectMenorMayor} >Menor precio</Dropdown.Item>
-                            <Dropdown.Item as="button" onClick={selectMayorMenor}>Mayor precio </Dropdown.Item>
+                            <Dropdown.Item as="button" onClick={selectMenorMayor} >Lista de Menor precio</Dropdown.Item>
+                            <Dropdown.Item as="button" onClick={selectMayorMenor}>Lista de Mayor precio </Dropdown.Item>
                         </DropdownButton>
                     </Col>
                     <Col>
@@ -133,7 +133,7 @@ const Catalog = () => {
                                         <br />
                                         <Button className='buttonSeeProducts' 
                                         onClick={()=>{
-                                            //console.log(auto.id);
+                                            // Escucha consola el id 
                                             navigate('/react-example/ProductCard',{state:{autoID:auto.id}});
                                         }}>Ver producto</Button>
                                     </div>
@@ -144,7 +144,7 @@ const Catalog = () => {
                         :
                         <h2>
                             <br></br>
-                            No fue encontrada ninguna coincidencia.</h2>
+                            Por favor escribir el nombre del producto correctamente</h2>
                 }
             </div>
             <br></br>
