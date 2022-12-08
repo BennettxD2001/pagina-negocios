@@ -2,7 +2,7 @@
   "name": "pagina-negocios",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://CassandraCHZ.github.io/react-example/",
+  "homepage": "http://BennettxD2001.github.io/pagina-negocios/",
   "dependencies": {
     "@paypal/react-paypal-js": "^7.8.2",
     "@testing-library/jest-dom": "^5.16.5",

@@ -11,7 +11,7 @@ const HomeProducts = () => {
     return (
         <Container fluid>
             <br/>
-            <h1 class="text-center">PRODUCTOS DESTACADOS</h1>
+            <h1 class="text-center">INVENTARIO</h1>
             <br></br>
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 {

@@ -17,11 +17,11 @@
     },
     {
         "id": 3,
-        "nombre": "Juan Carlos",
-        "apellidos": "Sánchez Gaytán",
-        "email": "negocios1@hotmail.com",
-        "contraseña": "6hr6w26frwqnmg",
-        "fechaNacimiento": "02/02/2002"
+        "nombre": "Jennifer",
+        "apellidos": "Rodriguez",
+        "email": "jenny@ita.com",
+        "contraseña": "12345678",
+        "fechaNacimiento": "23/08/2001"
     },
     {
         "id": 4,
