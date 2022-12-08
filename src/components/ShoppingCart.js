@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Card, Button, CardGroup, Row, Col, Table, InputGroup, Form, CloseButton } from 'react-bootstrap'; import "../css-components/home-product.css";
+import { Container, Card, Button, CardGroup, Row, Col, Table, InputGroup, Form, CloseButton } from 'react-bootstrap'; import "../css-components/style3.css";
 
 import PayPal from "./PayPal";
 //json file
@@ -33,7 +33,7 @@ function Carrito() {
             <br></br>
             <br></br>
             <br></br>
-            <h1>Carrito de Compras</h1>
+            <h1>Carrito de compras</h1>
             <br />
             <Row>
                 <Col md="auto" lg={8}>
@@ -77,7 +77,7 @@ function Carrito() {
                 </Col>
 
                 <Col xs lg={4}>
-                    <h1>Total a pagar con IVA:<br></br>$ {total}.00 mxn</h1>
+                    <h1>Cantidad a pagar:<br></br>$ {total}.00 mxn</h1>
                     <br></br>
                     <PayPal total={total}></PayPal>
                 </Col>

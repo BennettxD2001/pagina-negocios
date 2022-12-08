@@ -7,20 +7,37 @@ export default function POtable() {
     const alertShow = () => setShowAlert(true);
 
     const [Pedido1, setPedido1] = useState({
-        codigo: "YMTRYU90",
-        fecha: "2022/11/03",
-        precio: 590000,
-        metodo: "Transferencia",
+        codigo: "AA2",
+        fecha: "2021/01/07",
+        precio: 125000,
+        metodo: "Electronico",
         estatus: "Entregado",
-        factura: "No"
+        factura: "Si"
     })
 
     const [Pedido2, setPedido2] = useState({
-        codigo: "AATRYU95",
-        fecha: "2022/11/03",
-        precio: 590000,
-        metodo: "Paypal",
-        estatus: "En Proceso",
+        codigo: "AA1",
+        fecha: "2020/05/08",
+        precio: 205000,
+        metodo: "Efectivo",
+        estatus: "Entregado",
+        factura: "Sí"
+    })
+
+    const [Pedido3, setPedido3] = useState({
+        codigo: "AA3",
+        fecha: "2019/05/08",
+        precio: 245000,
+        metodo: "Efectivo",
+        estatus: "Entregado",
+        factura: "Sí"
+    })
+    const [Pedido4, setPedido4] = useState({
+        codigo: "AA4",
+        fecha: "2018/05/08",
+        precio: 188000,
+        metodo: "Electronico",
+        estatus: "Entregado",
         factura: "Sí"
     })
 
@@ -33,19 +50,17 @@ export default function POtable() {
         <>
             <Table striped bordered hover variant="ligth" 
                 style={{
-                    background: "#a5edff",
-                    borderColor: "gray"
+                    background: "#c0c0c0",
                 }}>
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Código de pedido</th>
+                        <th>ID</th>
+                        <th>Referencia de factura</th>
                         <th>Fecha</th>
-                        <th>Precio Total(MXN)</th>
+                        <th>Precio (MXN)</th>
                         <th>Método de Pago</th>
                         <th>Estatus</th>
                         <th>Factura</th>
-                        <th>Detalles</th>
                     </tr>
                 </thead>
                 <tbody style={{ justifyContent: "center" }}>
@@ -53,7 +68,7 @@ export default function POtable() {
                         <td>1</td>
                         <td>{Pedido1.codigo}</td>
                         <td>{Pedido1.fecha}</td>
-                        <td>{Pedido1.precio * 1.16}</td>
+                        <td>{Pedido1.precio}</td>
                         <td>{Pedido1.metodo}</td>
 
                         <td>
@@ -64,72 +79,111 @@ export default function POtable() {
                             }}>{Pedido1.estatus}
                             </div>
                         </td>
-                        <td>{Pedido1.factura}</td>
-                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Detalles</Button></td>
+                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Fact</Button></td>
                     </tr>
                     <tr>
-                        <td>1</td>
+                        <td>2</td>
                         <td>{Pedido2.codigo}</td>
                         <td>{Pedido2.fecha}</td>
-                        <td>{Pedido2.precio * 1.16}</td>
+                        <td>{Pedido2.precio}</td>
                         <td>{Pedido2.metodo}</td>
 
                         <td>
                             <div style={{
-                                background: "#E4A11B",
+                                background: "#14A44D",
                                 borderRadius: 5 + "px",
                                 color: "white"
                             }}>{Pedido2.estatus}
                             </div>
                         </td>
-                        <td>{Pedido2.factura}</td>
-                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Detalles</Button></td>
+                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Fact</Button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>{Pedido3.codigo}</td>
+                        <td>{Pedido3.fecha}</td>
+                        <td>{Pedido3.precio}</td>
+                        <td>{Pedido3.metodo}</td>
+
+                        <td>
+                            <div style={{
+                                background: "#14A44D",
+                                borderRadius: 5 + "px",
+                                color: "white"
+                            }}>{Pedido3.estatus}
+                            </div>
+                        </td>
+                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Fact</Button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>{Pedido4.codigo}</td>
+                        <td>{Pedido4.fecha}</td>
+                        <td>{Pedido4.precio}</td>
+                        <td>{Pedido4.metodo}</td>
+
+                        <td>
+                            <div style={{
+                                background: "#14A44D",
+                                borderRadius: 5 + "px",
+                                color: "white"
+                            }}>{Pedido4.estatus}
+                            </div>
+                        </td>
+                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Fact</Button></td>
                     </tr>
                 </tbody>
             </Table>
             <Modal size="lg" show={showAlert} onHide={alertClose}>
                 <Modal.Header closeButton style={{
-                    background: "#AAB7B8"
+                    background: "#white"
                 }} >
-                    <Modal.Title>Detalles del pedido:  {Pedido1.codigo}</Modal.Title>
+                    <Modal.Title>Factura num:  {Pedido1.codigo}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body style={{ background: '#DFE9E9' }}>
+                <Modal.Body style={{ background: 'white' }}>
                     <div style={{
                         background: "white",
                         color: "white",
                         padding: "12px",
                     }}>
-                        <h5><b>Referencia de pedido {Pedido1.codigo} - efectuado el {Pedido1.fecha}</b></h5>
+                        <h5><b>Referencia de factura {Pedido1.codigo} - {Pedido1.fecha}</b></h5>
                     </div>
 
                     <br></br>
-                    <div style={{
-                        background: "white",
-                        color: "white",
-                        padding: "12px",
-                    }}>
-                        <h5>Paquetería: ESTAFETA</h5>
-                        <h5>Modo de pago: {Pedido1.metodo}</h5>
-                    </div>
-
-                    <br></br>
-                    <div style={{
-                        background: "white",
-                        color: "white",
-                        padding: "12px",
-                    }}>
-                        <h5> <b>Siga su pedido paso a paso </b></h5>
+                    <h5> <b>Detalles </b></h5>
                         <Table>
                             <thead>
                                 <tr>
-                                    <th>Fecha</th>
-                                    <th>Estatus</th>
+                                    <th>Tipo de entrega</th>
+                                    <th>Tipo de pago</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>{Pedido1.fecha}</td>
-                                    <td>{Pedido1.estatus}</td>
+                                    <td>Personal</td>
+                                    <td>Efectivo</td>
+                                </tr>
+                            </tbody>
+                        </Table>
+
+                    <br></br>
+                    <div style={{
+                        background: "white",
+                        color: "white",
+                        padding: "12px",
+                    }}>
+                        <h5> <b>Equipamiento </b></h5>
+                        <Table>
+                            <thead>
+                                <tr>
+                                    <th>Modelo</th>
+                                    <th>Version</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ibiza 2012</td>
+                                    <td>SportCoupe</td>
                                 </tr>
                             </tbody>
                         </Table>
@@ -144,33 +198,14 @@ export default function POtable() {
                                 color: "white",
                                 padding: "12px",
                             }}>
-                                <h5> <b>Dirección de entrega</b></h5>
-                                <h5>Humberto Cuevas</h5>
-                                <h5>Salvador Novo 525</h5>
-                                <h5>20165 Aguascalientes</h5>
+                                <h5> <b>Dirección de entrega y facturación</b></h5>
+                                <h5>Talavera 232</h5>
+                                <h5>Rncho san miguel</h5>
                                 <h5>Aguascalientes</h5>
                                 <h5>México</h5>
-                                <h5>4491020947</h5>
-                                <h5>12154521</h5>
                             </div>
                         </Col>
 
-                        <Col >
-                            <div style={{
-                                background: "white",
-                                color: "white",
-                                padding: "12px",
-                            }}>
-                                <h5> <b>Dirección de facturación</b></h5>
-                                <h5>Humberto Cuevas</h5>
-                                <h5>Salvador Novo 525</h5>
-                                <h5>20165 Aguascalientes</h5>
-                                <h5>Aguascalientes</h5>
-                                <h5>México</h5>
-                                <h5>4491020947</h5>
-                                <h5>12154521</h5>
-                            </div>
-                        </Col>
                     </Row>
 
                     <br></br>
@@ -179,58 +214,25 @@ export default function POtable() {
                         color: "white",
                         padding: "12px",
                     }}>
-                        <h5> <b>Producto(s) a comprar</b></h5>
+                        <h5> <b>Producto</b></h5>
                         <Table>
                             <thead>
                                 <tr>
                                     <th>Producto</th>
-                                    <th>Cantidad</th>
-                                    <th>Precio Unitario</th>
+                                    <th>Tipo</th>
                                     <th>Precio Total</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Mercedes A3</td>
-                                    <td>1</td>
+                                    <td>Ibiza</td>
+                                    <td>Seminuevo</td>
                                     <td>{Pedido1.precio}</td>
-                                    <td>{Pedido1.precio * 1.16}</td>
                                 </tr>
                             </tbody>
                         </Table>
                     </div>
-
-                    <br></br>
-                    <div style={{
-                        background: "white",
-                        color: "white",
-                        padding: "12px",
-                    }}>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Fecha</th>
-                                    <th>Paquetería</th>
-                                    <th>Peso</th>
-                                    <th>Costo de envío</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>{Pedido1.fecha}</td>
-                                    <td>ESTAFETA</td>
-                                    <td>-</td>
-                                    <td>$20.00 MXN</td>
-                                </tr>
-                            </tbody>
-                        </Table>
-                    </div>
-
-
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="primary" onClick={alertClose}>Cerrar</Button>
-                </Modal.Footer>
             </Modal>
         </>
     );

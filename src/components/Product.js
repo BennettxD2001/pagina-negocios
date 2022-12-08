@@ -12,63 +12,63 @@ export default function Producto() {
     const [merchs, setMerch] = useState([
         {
             id: 1,
-            modelo: "Mercedes A3",
-            year: "2022",
-            precio: "590000"
+            modelo: "Ibiza",
+            year: "2012",
+            precio: "125000"
         },
         {
             id: 2,
-            modelo: "Corolla",
-            year: "2022",
-            precio: "390000"
+            modelo: "Mazda 3",
+            year: "2015",
+            precio: "205000"
         },
         {
             id: 3,
-            modelo: "Audi A3",
-            year: "2022",
-            precio: "470000"
+            modelo: "Accord",
+            year: "2013",
+            precio: "205000"
         },
         {
             id: 4,
-            modelo: "Camaro",
-            year: "2022",
-            precio: "590000"
+            modelo: "Sentra",
+            year: "2012",
+            precio: "105000"
         },
         {
             id: 5,
-            modelo: "Mercedes S63",
-            year: "2022",
-            precio: "500000"
+            modelo: "Saab 9-3",
+            year: "2005",
+            precio: "52000"
         },
         {
             id: 6,
-            modelo: "Sentra",
-            year: "2022",
-            precio: "590000"
+            modelo: "Mx5",
+            year: "2008",
+            precio: "149000"
         },
         {
             id: 7,
-            modelo: "Jetta",
-            year: "2022",
-            precio: "590000"
+            modelo: "Suburban",
+            year: "2011",
+            precio: "240000"
         },
         {
             id: 8,
-            modelo: "Fortuner",
-            year: "2022",
-            precio: "600000"
+            modelo: "Yaris",
+            year: "2010",
+            precio: "110000"
         },
         {
             id: 9,
-            modelo: "Hillux",
-            year: "2022",
-            precio: "500000"
+            modelo: "Gol",
+            year: "2012",
+            precio: "95000"
         },
         {
             id: 10,
-            modelo: "Tiguan",
-            year: "2022",
-            precio: "590000"
+            modelo: "Swift",
+            year: "2012",
+            precio: "120000"
         }
     ]);
 
@@ -93,8 +93,8 @@ export default function Producto() {
                 <caption align="center">Mercancía</caption>
                 <Table striped bordered hover variant="ligth"
                     style={{
-                        background: "#a5edff",
-                        borderColor: "gray"
+                        background: "#c0c0c0",
+                        borderColor: "white"
                     }}>
                     <thead>
                         <tr>

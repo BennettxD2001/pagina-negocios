@@ -11,11 +11,11 @@ function GridComplexExample() {
   const disableTrue = () => setDisable(true);
 
   const [editUsuario, setEditUsuario] = useState({
-    nombre: "Andrea Elizabeth",
-    apellidoP: "Flores",
-    apellidoM: "Padilla",
-    direccion: "av. jose maria chavez",
-    correo: "andrea@gmail.com",
+    nombre: "Bennett",
+    apellidoP: "Martínez",
+    apellidoM: "Terán",
+    direccion: "Rancho San Miguel",
+    correo: "bennett@ita.com",
     
   })
 
@@ -30,11 +30,11 @@ function GridComplexExample() {
       <br></br>
       <br></br>
       <br></br>
-      <img alt='Edit' title='Editar Perfil' src="/react-example/Images/Edit.gif" width="20%" height="20%" ></img>
+      <img alt='Edit' title='Foto de perfil' style={{ justifyContent: 'left' }} src="/react-example/Images/user2.JPG" width="100" height="100" ></img>
       <br></br>
       <br></br>
 
-      <Row className="mb-3 mx-5" >
+      <Col className="mb-3 mx-5" >
       <Form.Group as={Col} className="col-md-4" controlId="formGridName">
         <Form.Label>Nombre</Form.Label>
         <Form.Control placeholder={editUsuario.nombre}  disabled={disable}/>
@@ -52,32 +52,17 @@ function GridComplexExample() {
           <Form.Label>Apellido materno</Form.Label>
           <Form.Control placeholder={editUsuario.apellidoM}  disabled={disable}/>
         </Form.Group>
-      </Row>
-
-      <Row className="mb-3 mx-5">
-
         <Form.Group as={Col}  className="col-md-4" controlId="formGridEmail">
           <Form.Label>Correo</Form.Label>
           <Form.Control
             placeholder={editUsuario.correo}
             disabled={disable} />
         </Form.Group>
-
-        <Form.Group as={Col}  className="col-md-4" controlId="formGridPassword">
-          <Form.Label>Contraseña</Form.Label>
-          <Form.Control type="password" placeholder={editUsuario.contraseña}  disabled={disable} />
-        </Form.Group>
-      
-      <Form.Group as={Col} className="col-md-4" controlId="formGridAddress">
+        <Form.Group as={Col} className="col-md-4" controlId="formGridAddress">
         <Form.Label>Dirección</Form.Label>
         <Form.Control placeholder={editUsuario.direccion} disabled={disable} />
-      </Form.Group>
-      </Row>
-      <Button className='buttonSeeProducts me-3'  disabled={disable}  type="submit">
-        <h6>Editar </h6>
-      </Button>
-
-      <Button className='buttonSeeProducts' onClick={cli}><h6>Habilitar</h6>  </Button>
+        </Form.Group>
+      </Col>
     </Form>
 
 
