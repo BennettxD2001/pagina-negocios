@@ -85,7 +85,7 @@ const ProductCard = () => {
                     <tbody>
                         <tr>
                             <td>Andrea Leon</td>
-                            <td>Me gusto mucho la atencion de los trabajadores, todos muy atentos, tenian los autos muy limpios si regresaria por otro automovil.
+                            <td>Me gustó mucho la atencion de los trabajadores, todos muy atentos, tenian los autos muy limpios si regresaria por otro automovil.
                             </td>
                             <img src="/react-example/Images/estrella 1.jpg" width="150" height="50"></img>
                         </tr>
