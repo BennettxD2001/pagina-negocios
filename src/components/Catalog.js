@@ -77,13 +77,13 @@ const Catalog = () => {
             <br></br>
             <br></br>
             <h1>AUTOS BENNETT</h1>
-            <h1 class="text-center">Catálogo</h1>
+            <h1 class="text-center">Catálogo de productos</h1>
             <br></br>
 
             <Row>
                 <Row style={{ textAlign: "right" }}  >
                     <Col>
-                        <DropdownButton style={{ maxWidth: 200 + "px" }} id="dropdown-item-button" title="Ordenar" variant="outline-primary">
+                        <DropdownButton style={{ maxWidth: 200 + "px" }} id="dropdown-item-button" title="filtrar" variant="outline-primary">
                             <Dropdown.Item as="button" onClick={selectTodos}>Todos</Dropdown.Item>
                             <Dropdown.Item as="button" onClick={selectAutomoviles}>Automóvil</Dropdown.Item>
                             <Dropdown.Item as="button" onClick={selectCamionetas}>Camioneta</Dropdown.Item>
