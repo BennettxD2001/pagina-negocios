@@ -112,8 +112,8 @@ export default function Producto() {
                                     <td>{merch.modelo}</td>
                                     <td>{merch.year}</td>
                                     <td>{merch.precio}</td>
-                                    <td><button className="btn btn-danger" onClick={() => deleteTest(merch.id)}>Borrar</button></td>
-                                    <td><button className="btn btn-primary" onClick={() => dataTransfer(merch)}>Editar</button></td>
+                                    <td><button className="btn btn-danger" onClick={() => deleteTest(merch.id)}>Eliminar</button></td>
+                                    <td><button className="btn btn-primary" onClick={() => dataTransfer(merch)}>Modificar</button></td>
                                 </tr>
                             })
                         }
