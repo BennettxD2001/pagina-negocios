@@ -33,8 +33,9 @@ const ProductCard = () => {
     return (
         <Container>
             <br /> <br /> <br /> <br />
-            <h1 class="text-center">Producto</h1>
             <br /> <br /> <br />
+            <h1 class="text-center">AUTOS BENNETT</h1>
+            <h1 class="text-center">Producto</h1>
             <Row style={{ textAlign: "left" }}>
             <div style={{ textAlign: "center" }}>
                 <Button className='buttonSeeProducts' onClick={toastShowC}>Añadir al carrito</Button>

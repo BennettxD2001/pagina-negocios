@@ -76,6 +76,7 @@ const Catalog = () => {
             <br />
             <br></br>
             <br></br>
+            <h1>AUTOS BENNETT</h1>
             <h1 class="text-center">Catálogo</h1>
             <br></br>
 
@@ -147,7 +148,30 @@ const Catalog = () => {
                 }
             </div>
             <br></br>
+            <Form.Group className="mb-3">
+                            <Form.Label><h5>Mandanos un mensaje via email</h5></Form.Label>
+                            <br></br>
+                            <h6><a href="https://www.google.com/intl/es-419/gmail/about/"> AutosBennett@gmail.com</a></h6>
+                            <img
+                            width="5%"
+                            height="5%"
+                            alt='facebook'
+                            title='facebook'
+                            src="/react-example/Images/facebook.png">
+                            </img>
+                            <img
+                            width="5%"
+                            height="5%"
+                            alt='instagram'
+                            title='instagram'
+                            src="/react-example/Images/instagram.png">
+                            </img>
+                            <br></br>
+                            <br></br>
+                            <h6>© Copyright 2022 | AutosBennett</h6>
+                        </Form.Group>
         </Container>
+        
 
     );
 }
