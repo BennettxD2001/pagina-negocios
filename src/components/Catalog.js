@@ -15,13 +15,6 @@ const Catalog = () => {
 
     const [autosTodos, setAutosTodos] = useState(Autos.autos);
 
-    const [camionetas, setCamionetas] = useState([Autos.autos[6]]);
-
-    const [automoviles, setAutomoviles] = useState([Autos.autos[0], Autos.autos[1], Autos.autos[2], Autos.autos[3], Autos.autos[4], Autos.autos[5], Autos.autos[7], Autos.autos[8], Autos.autos[9]]);
-
-    const [menorMayorCar, setMenorMayorCar] = useState([Autos.autos[4], Autos.autos[8], Autos.autos[3], Autos.autos[7], Autos.autos[9], Autos.autos[0], Autos.autos[5], Autos.autos[2], Autos.autos[1], Autos.autos[6]],);
-
-    const [mayorMenorCar, setMayorMenorCar] = useState([Autos.autos[6], Autos.autos[1], Autos.autos[2], Autos.autos[5], Autos.autos[0], Autos.autos[9], Autos.autos[7], Autos.autos[3], Autos.autos[8], Autos.autos[4]],);
 
     const selectMenorMayor = () => {
         buscarPalabra.palabra="";
