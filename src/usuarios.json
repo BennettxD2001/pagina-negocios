@@ -1,11 +1,11 @@
 {"usuarios":[
     {
         "id": "1",
-        "nombre": "Saúl",
-        "apellidos": "Mascorro Luévano",
-        "email": "smascorro2001@gmail.com",
+        "nombre": "Bennet",
+        "apellidos": "Martinez Teran",
+        "email": "BennettxD2001@gmail.com",
         "contraseña": "1dsa483dt4",
-        "fechaNacimiento": "23/09/2001"
+        "fechaNacimiento": "07/09/2001"
     },
     {
         "id": 2,

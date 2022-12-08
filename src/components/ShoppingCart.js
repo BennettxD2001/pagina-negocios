@@ -14,7 +14,7 @@ function Carrito() {
         pago();
       });
     const pago = () => {
-        let pay = (carros.reduce((acumulador, actual) => acumulador + actual.precio, 0))*1.16;
+        let pay = (carros.reduce((acumulador, actual) => acumulador + actual.precio, 0));
         console.log(pay)
         settotal(pay);
     }
