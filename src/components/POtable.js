@@ -50,7 +50,7 @@ export default function POtable() {
         <>
             <Table striped bordered hover variant="ligth" 
                 style={{
-                    background: "#c0c0c0",
+                    background: "white",
                 }}>
                 <thead>
                     <tr>
@@ -79,7 +79,7 @@ export default function POtable() {
                             }}>{Pedido1.estatus}
                             </div>
                         </td>
-                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Fact</Button></td>
+                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Ver</Button></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -96,7 +96,7 @@ export default function POtable() {
                             }}>{Pedido2.estatus}
                             </div>
                         </td>
-                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Fact</Button></td>
+                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Ver</Button></td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -113,7 +113,7 @@ export default function POtable() {
                             }}>{Pedido3.estatus}
                             </div>
                         </td>
-                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Fact</Button></td>
+                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Ver</Button></td>
                     </tr>
                     <tr>
                         <td>4</td>
@@ -130,7 +130,7 @@ export default function POtable() {
                             }}>{Pedido4.estatus}
                             </div>
                         </td>
-                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Fact</Button></td>
+                        <td><Button onClick={VerDetalles} variant="link" style={{ color: "blue" }}>Ver</Button></td>
                     </tr>
                 </tbody>
             </Table>
