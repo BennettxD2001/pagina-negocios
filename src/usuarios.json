@@ -22,6 +22,14 @@
         "email": "negocios1@hotmail.com",
         "contraseña": "6hr6w26frwqnmg",
         "fechaNacimiento": "02/02/2002"
+    },
+    {
+        "id": 4,
+        "nombre": "Andrea",
+        "apellidos": "León Aceves",
+        "email": "leon.acevesandrea@gmail.com",
+        "contraseña": "6hr6w26frwqnmg",
+        "fechaNacimiento": "09/11/2001"
     }
 ]
 }

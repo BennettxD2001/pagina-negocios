@@ -33,6 +33,14 @@ export default function Usuario() {
             email: "smascorro2001@gmail.com",
             contraseña: "1dsa483dt4",
             fechaNacimiento: "23/09/2001"
+        },
+        {
+            id: 4,
+            nombre: "Andrea",
+            apellidos: "León Aceves",
+            email: "leon.acevesandrea@gmail.com",
+            contraseña: "1dsa483dt4",
+            fechaNacimiento: "09/11/2001"
         }
     ]);
 
