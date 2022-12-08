@@ -12,28 +12,13 @@ export default function Usuario() {
     const [users, setUser] = useState([
         {
             id: 1,
-            nombre: "Bennett",
-            apellidos: "Mtz",
-            email: "bennett@ita.com",
+            nombre: "Administrador",
+            apellidos: "Admin",
+            email: "admin@gmail.com",
             contraseña: "12345678",
             fechaNacimiento: "07/09/2001"
-        },
-        {
-            id: 2,
-            nombre: "Luis Fernando",
-            apellidos: "Gutiérrez Hernández",
-            email: "luisGH2001@gmail.com",
-            contraseña: "789dshj9h5g",
-            fechaNacimiento: "01/01/2001"
-        },
-        {
-            id: 3,
-            nombre: "Jennifer",
-            apellidos: "Rodriguez",
-            email: "jenny@ita.com",
-            contraseña: "12345678",
-            fechaNacimiento: "25/08/2001"
         }
+        
     ]);
 
     function deleteTest(id) {
@@ -57,7 +42,7 @@ export default function Usuario() {
                 <caption align="center">Usuarios</caption>
                 <Table responsive="md" striped bordered hover variant="ligth"
                     style={{
-                        background: "#c0c0c0",
+                        background: "white",
                         borderColor: "white"
                     }}>
                     <thead>

@@ -8,7 +8,7 @@
   
   .buttonAdd {
     padding: 10px; 
-    background-color: green;
+    background-color: rgb(43, 248, 231);
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -16,7 +16,7 @@
   
   .buttonDelete {
     padding: 10px; 
-    background-color: red;
+    background-color: rgb(253, 87, 87);
     color: white;
     text-decoration: none;
     border-radius: 10px;

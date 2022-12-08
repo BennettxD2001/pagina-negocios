@@ -73,12 +73,12 @@ const ProductCard = () => {
             </Row>
 
             <div>
-                <h4>Comentarios sobre la consecionaria</h4>
-                <Table style={{ backgroundColor: "#c0c0c0" }}>
+                <h4>Reseñas</h4>
+                <Table style={{ backgroundColor: "white" }}>
                     <thead>
                         <tr>
                             <th>Cliente</th>
-                            <th>Comentario</th>
+                            <th> </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -90,7 +90,7 @@ const ProductCard = () => {
                     </tbody>
                 </Table>
 
-                <Button className='buttonSeeProducts' onClick={modalShow} >Agregar comentario</Button>
+                <Button className='buttonSeeProducts' onClick={modalShow} >Agregar reseña</Button>
             </div>
 
             <br />
@@ -100,16 +100,16 @@ const ProductCard = () => {
                     <Toast.Header>
                         <strong className="me-auto">Añadir al carrito</strong>
                     </Toast.Header>
-                    <Toast.Body>Se añadió correctamente tu producto al carrito.</Toast.Body>
+                    <Toast.Body>Se añadió al carrito.</Toast.Body>
                 </Toast>
             </ToastContainer>
 
             <ToastContainer className="p-3" position={position}>
                 <Toast show={showToastF} onClose={toastCloseF}>
                     <Toast.Header>
-                        <strong className="me-auto">Añadir a favoritos</strong>
+                        <strong className="me-auto">Añadir a mi lista de deseos</strong>
                     </Toast.Header>
-                    <Toast.Body>Se añadió correctamente a tus favoritos.</Toast.Body>
+                    <Toast.Body>Se añadió a tu lista de deseos.</Toast.Body>
                 </Toast>
             </ToastContainer>
 

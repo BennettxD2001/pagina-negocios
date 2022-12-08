@@ -30,10 +30,12 @@ function Favorites() {
             <br></br>
             <br></br>
             <br></br> <br></br>
-            <h1>Mis favoritos</h1>
+            <br></br>
+            <h1>Lista de deseos</h1>
             <br></br>
             <br />
             <Row>
+                <center>
                 <Col md="auto" lg={8}>
                     {
                         carros.map(producto => {
@@ -56,7 +58,7 @@ function Favorites() {
                                             </td>
 
                                             <td>
-                                                <Button className='buttonSeeProducts' onClick={click}> Ver producto</Button>
+                                                <Button className='buttonSeeProducts' onClick={click}> Ver detalles</Button>
                                             </td>
 
                                             <td>
@@ -76,12 +78,32 @@ function Favorites() {
                         })
                     }
                 </Col>
-
-                <Col xs lg={4}>
-                    <img src="/react-example/Images/Favorites.gif" title="Favoritos" alt="Favoritos" width={400}/>
-                </Col>
+                </center>
             </Row>
-
+            <br></br>
+            <br></br>
+            <Form.Group className="mb-3">
+                            <Form.Label><h5>Mandanos un mensaje via email</h5></Form.Label>
+                            <br></br>
+                            <h6><a href="https://www.google.com/intl/es-419/gmail/about/"> AutosBennett@gmail.com</a></h6>
+                            <img
+                            width="5%"
+                            height="5%"
+                            alt='facebook'
+                            title='facebook'
+                            src="/react-example/Images/facebook.png">
+                            </img>
+                            <img
+                            width="5%"
+                            height="5%"
+                            alt='instagram'
+                            title='instagram'
+                            src="/react-example/Images/instagram.png">
+                            </img>
+                            <br></br>
+                            <br></br>
+                            <h6>© Copyright 2022 | AutosBennett</h6>
+                        </Form.Group>
         </Container>
     );
 }
