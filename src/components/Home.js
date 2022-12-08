@@ -13,7 +13,7 @@ const Home = () => {
                     <div class="col text-center">
                         <img
                             className="img-fluid shadow-4"
-                            src="http://www.diamondpearlz.com/wp-content/uploads/2015/12/banner-1.jpg"                            
+                            src="/react-example/Images/logito.jpeg"                            
                             class="d-block w-100"
                             alt="First slide"
                             title="Carousel1"

@@ -76,10 +76,9 @@ const Catalog = () => {
             <br />
             <br></br>
             <br></br>
+            <br></br>
             <h1>AUTOS BENNETT</h1>
             <h1 class="text-center">Catálogo</h1>
-            <br></br>
-
             <Row>
                 <Row style={{ textAlign: "right" }}  >
                     <Col>
@@ -135,7 +134,7 @@ const Catalog = () => {
                                         onClick={()=>{
                                             //console.log(auto.id);
                                             navigate('/react-example/ProductCard',{state:{autoID:auto.id}});
-                                        }}>Ver producto</Button>
+                                        }}>Ver detalles</Button>
                                     </div>
                                 </div>
                             </div>
