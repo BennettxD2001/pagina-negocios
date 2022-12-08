@@ -78,7 +78,7 @@ const Catalog = () => {
             <br></br>
             <br></br>
             <h1>AUTOS BENNETT</h1>
-            <h1 class="text-center">Catálogo</h1>
+            <h1 class="text-center">Catálogo de productos</h1>
             <Row>
                 <Row style={{ textAlign: "right" }}  >
                     <Col>
