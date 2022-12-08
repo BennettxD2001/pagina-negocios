@@ -26,15 +26,6 @@ const Login = () => {
     return (
         <Container>
             <Row style={{ justifyContent: 'center' }}>
-                <Col>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <img alt='InicioSesion' title='InicioSesion' src="/react-example/Images/logito.jpeg" width={490}></img>
-                </Col>
                 <Col md="5">
                     <Form onSubmit={click}>
                         <br></br>
@@ -43,18 +34,14 @@ const Login = () => {
                         <br></br>
                         <br></br>
                         <br></br>
-                        <Form.Label><h2>Administrador</h2></Form.Label>
-                        <br></br>
-                        <img src="/react-example/Images/Perfil.jpg"></img>
-                        <br></br>
-                        <Form.Label><h4>Iniciar sesión</h4></Form.Label>
+                        <Form.Label><h4>Inicia sesión con tu cuenta de administrador</h4></Form.Label>
                         <Form.Group className="mb-3" controlId="email">
-                            <Form.Label style={{ fontSize: '21px' }}></Form.Label>
+                            <Form.Label style={{ fontSize: '21px' }}>Email</Form.Label>
                             <Form.Control
                                 required
                                 type="email"
                                 minLength={5}
-                                placeholder="Correo ej.admin_19151674@gmail.com"
+                                placeholder="nombre-de-usuario@admin.com"
                                 autoFocus
                                 name="email"
                                 value={Login.email}
@@ -69,16 +56,14 @@ const Login = () => {
                                 type="password"
                                 maxLength="12"
                                 minLength={8}
-                                placeholder="*********"
+                                placeholder="Ingresa tu contraseña"
                                 name="password"
                                 value={Login.password}
                                 onChange={onChangeLogin}
                             />
                         </Form.Group>
                         <br></br>
-                        <center>
-                        <Button className='buttonSeeProducts' type='submit'>Siguiente</Button>
-                        </center>
+                        <Button className='buttonSeeProducts' type='submit'> Iniciar sesión </Button>
                     </Form>
                 </Col>
 

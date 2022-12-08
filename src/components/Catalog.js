@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Form, Button, Dropdown, DropdownButton, Col } from 'react-bootstrap';
-import "../css-components/home-product.css";
+import "../css-components/style3.css";
 import { useNavigate } from 'react-router-dom';
 
 

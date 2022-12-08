@@ -1,29 +1,23 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import POmarque from './POmarque';
 import POtable from './POtable';
 
 //style
-import "../css-components/contact-style.css";
+import "../css-components/style2.css";
 
 export default function Purchase() {
 
     return (
-        <Container>
+        <Container style={{ justifyContent: 'left' }}>
             <br></br>
             <br></br>
             <br></br>
             <Row style={{ justifyContent: 'left' }} >
-                <Col xs lg={5} >
-                    <br></br>
-                    <POmarque/>
-                </Col>
                 <Col md="auto" lg={7} >
                     <br></br>
                     <br></br>
                     <div style={{ textAlign: 'left' }}>
-                        <h1>Órdenes de Compra</h1>
-                        <h5><b>Aquí están tus pedidos desde la creacion de tu cuenta.</b></h5>
+                        <h5><b>Tus compras.</b></h5>
                     </div>
                     <POtable></POtable>
                 </Col>
