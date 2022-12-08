@@ -8,16 +8,16 @@ import "../css-components/style2.css";
 export default function Purchase() {
 
     return (
-        <Container style={{ justifyContent: 'left' }}>
+        <Container style={{ justifyContent: 'center' }}>
             <br></br>
             <br></br>
             <br></br>
-            <Row style={{ justifyContent: 'left' }} >
-                <Col md="auto" lg={7} >
+            <Row style={{ justifyContent: 'center' }} >
+                <Col md="auto" lg={10} >
                     <br></br>
                     <br></br>
-                    <div style={{ textAlign: 'left' }}>
-                        <h5><b>Tus compras.</b></h5>
+                    <div style={{ textAlign: 'center' }}>
+                        <h5><b>Ordenes de compra.</b></h5>
                     </div>
                     <POtable></POtable>
                 </Col>

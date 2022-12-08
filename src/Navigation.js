@@ -29,8 +29,8 @@ const Navigation = () => {
                                 <NavDropdown.Item as={Link} to="/react-example/Login" title="Inicio sesión" style={{ color:  "#000000" }}><b>Inicio sesión</b></NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/react-example/Home" title="Cerrar sesión" style={{ color:  "#000000" }}><b>Cerrar sesión</b></NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/react-example/PurchaseOrder" title="Orden de Compra" style={{ color:  "#000000" }}><b>Órdenes de Compra</b></NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/react-example/ShoppingCart" title="Carrito" style={{ color:  "#000000" }}><b>Carrito</b></NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/react-example/Favorites" title="Favoritos" style={{ color:  "#000000" }}><b>Favoritos</b></NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/react-example/ShoppingCart" title="Carrito" style={{ color:  "#000000" }}><b>🛒</b></NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/react-example/Favorites" title="Lista de deseos" style={{ color:  "#000000" }}><b>❤</b></NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         </Container>
